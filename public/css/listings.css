@@ -1,0 +1,41 @@
+.listingsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+.listing {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: black 1px solid;
+    margin: auto;
+    width: 75%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    
+}
+
+.listing:hover {
+    transform: scale(1.05);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+p:last-of-type {
+    margin-left: auto;
+}
+
+/* Remove bullets from list items  */
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link rel="stylesheet" href="css/listings.css">
+</head>
+<body>
+    <% if (!listing) { %>
+        <h1>Listing not found</h1>
+    <% } else { %>
+        <div class="row">
+            <p><%= listing.firstName + " " + listing.lastName %></p>
+            <p><%= listing.email %></p>
+        </div>
+        <div class="row">
+            <p><%= listing.make + " " + listing.model + " " + listing.year %></p>
+            <p>$<%= listing.price %></p>
+        </div>
+    <% } %>
+
+</body>
+</html>
