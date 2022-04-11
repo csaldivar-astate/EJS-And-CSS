@@ -58,11 +58,11 @@ You **should not** hardcode this specific userID. Rather use a template literal 
 
 ## Step 3: The Views
 
-Use the EJS files I provided as a guide.
+Use the EJS files I provided as a guide. Notice that the `views` directory is in lowercase. This is the default name used by express and it is case-sensitive.
 
 ### `directoryPage.ejs`
 
-Create a new file in the `Views` directory called `directoryPage.ejs`. This template file will be used to display all of the user accounts. Add a `link` element for the css file `users.css` in the `head` element. This will give your page the default styling so you can compare your page to the correct page. **DO NOT MODIFY THE CSS FILE.**
+Create a new file in the `views` directory called `directoryPage.ejs`. This template file will be used to display all of the user accounts. Add a `link` element for the css file `users.css` in the `head` element. This will give your page the default styling so you can compare your page to the correct page. **DO NOT MODIFY THE CSS FILE.**
 
 Look back at the `renderDirectory` function in `userController.js`. You will be able to access the array by using `users`.
 
@@ -92,7 +92,7 @@ If the user account has a bio then display it; otherwise, display the text `No b
 
 ### `accountPage.ejs`
 
-Create a new file in the `Views` directory called `directoryPage.ejs`. This template file will be used to display all of the user accounts. Add a `link` element for the css file `users.css` in the `head` element. This will give your page the default styling so you can compare your page to the correct page. **DO NOT MODIFY THE CSS FILE.**
+Create a new file in the `views` directory called `directoryPage.ejs`. This template file will be used to display all of the user accounts. Add a `link` element for the css file `users.css` in the `head` element. This will give your page the default styling so you can compare your page to the correct page. **DO NOT MODIFY THE CSS FILE.**
 
 Look back at the `renderDirectory` function in `userController.js`. You will be able to access the array by using `users`.
 
@@ -260,7 +260,7 @@ By the end of the assignment this should be your directory structure (`package-l
 ├───Validators
 │   ├───validatorGenerator.js
 │   └───validators.js
-├───Views
+├───views
 │   ├───accountPage.ejs
 │   ├───directoryPage.ejs
 │   ├───listingsPage.ejs
