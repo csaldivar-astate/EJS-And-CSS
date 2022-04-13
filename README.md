@@ -105,7 +105,7 @@ div class="row"
     p
         EMAIL
 
-form action="/users/USER_ID" method="post"
+form action="/users/USER_ID/bio" method="post"
     div
         textarea name="bio"
             USER_BIO || ""
